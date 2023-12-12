@@ -1,10 +1,10 @@
-import product1PNG from '../../assets/images/product-1.png';
-import product2PNG from '../../assets/images/product-2.png';
-import product3PNG from '../../assets/images/product-3.png';
-import product4PNG from '../../assets/images/product-4.png';
-import avatorPNG from '../../assets/images/avator.png';
+import product1PNG from '../assets/images/product-1.png';
+import product2PNG from '../assets/images/product-2.png';
+import product3PNG from '../assets/images/product-3.png';
+import product4PNG from '../assets/images/product-4.png';
+import avatorPNG from '../assets/images/avator.png';
 
-export const tabList = [{
+const tabList = [{
   title: 'Recommended',
   subTabs: [
     { title: 'Default' },
@@ -38,7 +38,7 @@ export const tabList = [{
   ],
 }];
 
-export const products = [
+const products = [
   {
     pid: 1,
     title: 'Spider Potter',
@@ -112,3 +112,18 @@ export const products = [
     avatorPNG,
   },
 ];
+
+export function useTabList() {
+  return tabList;
+}
+
+export function useProducts() {
+  return products;
+}
+
+export function useProduct(pid?: number) {
+  if (!pid) {
+    return [];
+  }
+  return products.filter((p) => p.pid === pid);
+}

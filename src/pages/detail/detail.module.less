@@ -1,0 +1,155 @@
+.detail {
+  padding: 0 24px;
+}
+
+.img {
+  width: 100vw;
+  margin-left: -24px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.userinfo {
+  color: #A72062;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+  }
+}
+
+.tags {
+  color: #A72062;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+
+  > * {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 21px;
+    margin-right: 4px;
+  }
+}
+
+.catogery {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+
+  > * {
+    font-size: 12px;
+    line-height: 18px;
+    color: #15097A;
+    background-color: #f1f1f1;
+    padding: 4px 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+}
+
+.contributors {
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  color: #000989;
+
+  .contributorsCircle {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: #C4C4C4;
+    border: 1px solid #969696;
+    margin-left: -18px;
+    border-radius: 100%;
+  }
+
+  .contributorsText {
+    margin-left: 10px;
+  }
+}
+
+.counts {
+  display: flex;
+  color: #15097A;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  align-items: center;
+
+  .countsCircle {
+    border: 6px solid currentColor;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 4px;
+  }
+}
+
+.enterDream {
+  position: relative;
+  width: 260px;
+  height: 52px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  background-color: white;
+  overflow: visible;
+  margin-top: 40px;
+  color: #15097A;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    background: linear-gradient(91.45deg, #15097A 7.02%, #FF006A 94.25%);
+    content: '';
+    z-index: -1;
+    border-radius: 50px;
+  }
+
+  &:after {
+    border: none;
+  }
+}
+
+.viewDreamDetail {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000989;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: currentColor;
+    margin-left: 6px;
+  }
+}
