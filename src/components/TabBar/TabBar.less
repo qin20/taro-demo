@@ -1,0 +1,49 @@
+.comp-tab-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  height: 65px;
+  color: #15097A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  box-shadow: -4px -1px 4px 0px #00000040;
+  padding: 0 40px;
+
+  .bar-item {
+    opacity: 0.3;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    &:before {
+      width: 36px;
+      height: 36px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      border-radius: 100%;
+    }
+
+    &.active {
+      opacity: 1;
+      &:before {
+        box-shadow: 3px 4px 4px 0px #00478940;
+      }
+    }
+  }
+
+  .bar-item-main {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, #FF006A 0%, #062C81 100%, #36D1F1 100%);
+    box-shadow: 3px 4px 4px 0px #00478940;
+  }
+}

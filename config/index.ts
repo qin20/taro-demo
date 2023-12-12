@@ -1,9 +1,10 @@
 const config = {
   projectName: 'interview',
   date: '2023-12-12',
-  designWidth: 750,
+  designWidth: 430,
   deviceRatio: {
     640: 2.34 / 2,
+    430: 1,
     750: 1,
     828: 1.81 / 2
   },

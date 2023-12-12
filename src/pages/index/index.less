@@ -1,0 +1,231 @@
+.index {
+  padding: 16px;
+}
+
+.menu {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 4px 4px 0px #00478940;
+  border-radius: 50%;
+
+  &:before {
+    color: #15097A;
+    font-size: 24px;
+  }
+}
+
+.search {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 15px;
+    bottom: 10px;
+    top: 10px;
+    background: linear-gradient(90deg, #15097A 0%, #FF006A 100%);
+    border-radius: 100px;
+  }
+  .at-search-bar__input-cnt {
+    background-color: #fff;
+  }
+  .at-search-bar__placeholder-wrap {
+    justify-content: left;
+    .at-icon-search {
+      font-size: 20px;
+      color: #15097A;
+      font-weight: bold;
+    }
+  }
+  .at-search-bar__action {
+    display: none;
+  }
+  .weui-input {
+    height: 100%;
+    padding-left: 6px;
+  }
+}
+
+.swiper {
+  height: 295px;
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    transition: all .3s;
+  }
+
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 3px;
+  }
+
+  .swiper-container > .swiper-pagination > .swiper-pagination-bullet-active {
+    width: 10px;
+    border-radius: 10px;
+  }
+}
+
+.swiper-item {
+  width: 100%;
+  height: 279px;
+}
+
+.btn-get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #FFFFFF 37.4%, #FFFFFF 88.55%, #B7DFC8 100%);
+  box-shadow: 3px 4px 4px 0px rgba(0, 71, 137, 0.25);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 108px;
+  height: 35px;
+  border-radius: 35px;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.tabs {
+  .tabs-navigator {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+    position: relative;
+    padding-right: 32px;
+    color: #062C81;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    .active {
+      font-weight: 700;
+      color: #D70B5F;
+    }
+  }
+
+  .tabs-panels {
+    .hide {
+      display: none;
+    }
+  }
+}
+
+.sub-tabs-navigator {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px;
+  position: relative;
+  padding-right: 50px;
+  color: #062C81;
+  padding-bottom: 2px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 1;
+
+  .active {
+    font-weight: 700;
+    color: #15097A;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(116.56deg, #15097A 0%, #FF006A 66.68%);
+      display: block;
+    }
+  }
+
+  .filters {
+    position: absolute;
+    right: 0;
+    padding-left: 6px;
+    border-left: 1px solid #ddd;
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-item {
+  position: relative;
+  width: 48%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 4px 4px 0px #00000040;
+  margin-bottom: 16px;
+}
+
+.is-new {
+  position: absolute;
+  background: #FF006A;
+  width: 100px;
+  height: 15px;
+  top: 14px;
+  left: -26px;
+  transform: rotate(-45deg);
+  z-index: 1;
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.product-counts {
+  position: absolute;
+  right: 0;
+  top: 110px;
+  color: white;
+  text-align: right;
+  font-size: 10px;
+  line-height: 1;
+  padding-right: 6px;
+
+  .at-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 6px;
+    &::before {
+      margin-right: 2px;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1;
+      margin-top: -2px;
+    }
+  }
+}
+
+.product-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #051222;
+}
+
+.product-descr {
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+}
